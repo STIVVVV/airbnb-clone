@@ -1,20 +1,18 @@
 import React from "react"
-import cardImage from '../../images/image 12.png';
 import starIcon from '../../images/Star 1.png';
 
 const Card = (props) => {
     return (
         <div className='card'>
-            <img src = {cardImage} className="card--image" alt="swimmer"/>
+            <img src = {props.img} className="card--image" alt="swimmer"/>
             <div className="card--stats">
                 <img src = {starIcon} className="card--star" alt="star Icon"/>
-                <span>5.0 </span>
-                <span className="gray">(6) * </span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">{props.reviewCount}* </span>
+                <span className="gray">{props.country}</span>
             </div>
-            <p>Life lessons with katie Zaferes</p>
-            <p><span className="bold">From $136</span> / person</p>
-            
+            <p>{props.title}</p>
+            <p><span className="bold">From {props.price}</span> / person</p>
         </div>
     ) 
 }
