@@ -10,7 +10,7 @@ const Card = (props) => {
     {
         badgeText = "Online"
     }
-    
+
     return (
         <div className='card'>
             {badgeText && <div className="card--badge">{badgeText}</div>}
@@ -22,7 +22,9 @@ const Card = (props) => {
                 <span className="gray">{props.item.location}</span>
             </div>
             <p className="card--title">{props.item.title}</p>
-            <p className="card--price"><span className="bold">From {props.item.price}</span> / person</p>
+            <p className="card--price">
+                <span className="bold">From {props.item.price}</span> / person
+            </p>
         </div>
     ) 
 }

@@ -1,10 +1,9 @@
 import React from 'react';
-import groupPic from '../../images/Group 77.png';
 
 const Hero = () => {
     return (
         <section className='hero'>
-            <img className='hero--photo' src={groupPic} alt="group pictures"/>
+            <img className='hero--photo' src="images/Group 77.png" alt="group pictures"/>
 
             <h1 className='hero--header'>Online experiances</h1>
             <p className='hero--text'>

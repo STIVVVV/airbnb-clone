@@ -1,5 +1,5 @@
 import React from 'react';
-// import Hero from './components/Hero/Hero';
+import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar';
 import Card from './components/Card/Card';
 import data from './data.js';
@@ -19,7 +19,7 @@ export default function App()
     return (
         <div>
             <Navbar />
-            {/* <Hero /> */}
+            <Hero />
             <section className='cards-list'>
                 {cards}
             </section>
